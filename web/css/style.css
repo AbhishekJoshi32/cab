@@ -15,3 +15,56 @@ p{
 
 
 }
+
+.navbar{
+	background: none;
+	border: none;
+	margin: 30px 30px;
+}
+
+.nav li{
+	width: 100px;
+	text-align: center;
+	margin: 0 5px;
+}
+
+.nav li:hover{
+	background: yellow;
+}
+
+.login{
+    border-style: solid;
+    border-width: 2px;
+	font-weight: bolder;
+	color: #777;
+	margin: 0 10px;
+}
+
+.nav .login:hover{
+	background-color: white;
+}
+
+.jumbotron{
+}
+.container{
+	background-color: rgba(0,0,0,0.1);
+	width: 55%;
+	margin-left:50px; 
+}
+
+.input-group{
+	padding: 20px;
+}
+.input-group-addon{
+	width: 60px;
+	border:none;
+	background:none;
+}
+.jumbotron li:hover{
+	background-color: inherit;
+}
+
+.selectpicker{
+	height: 34px;
+	width: 107px;
+}
