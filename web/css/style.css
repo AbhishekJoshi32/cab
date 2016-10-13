@@ -90,7 +90,12 @@ top:100px;
 .nav-tabs>li>a{
 	color: #A3A3A3;
 }
-
+.container h1{
+	color: rgba(0, 0, 0, 0.48);
+	text-align:center;
+	margin: 40px 0;
+	font-family: Lato;
+}
 form{
 	margin-top: 20px;
 }
@@ -152,12 +157,7 @@ width:100%;
 	margin-left: 50px;
 }
 
-.container h1{
-	color: rgba(0, 0, 0, 0.48);
-	text-align:center;
-	margin: 40px 0;
-	font-family: Lato;
-}
+
 
 .input-group {
     width: 80%;
