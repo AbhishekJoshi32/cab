@@ -45,9 +45,18 @@ p{
 }
 
 .jumbotron{
+padding:0;
+position:relative;
 }
-.container{
-	background-color: rgba(0,0,0,0.1);
+
+.why{
+margin-top:30px;
+background:yellow;
+}
+
+
+.book{
+	background: rgba(0,0,0,0.4);
 	width: 55%;
 	margin-left:50px; 
 }
@@ -67,4 +76,14 @@ p{
 .selectpicker{
 	height: 34px;
 	width: 107px;
+}
+
+.slide{
+}
+.book{
+position: absolute;
+top:100px;
+}
+.slide img{
+width:100%;
 }
