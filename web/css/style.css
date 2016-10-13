@@ -131,6 +131,7 @@ width:100%;
 .para-cont{
 	width: 100%;
 	top:250px;
+	font-size:200%;
 	text-align: center;
 	position: absolute;
 	color: whitesmoke;
@@ -148,7 +149,7 @@ width:100%;
 }
 
 .container h1{
-	color: #ffe535;
+	color: white;
 	margin: 40px 0;
 	font-family: Lato;
 }
