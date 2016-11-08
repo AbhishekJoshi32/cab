@@ -11,13 +11,9 @@
     <link rel="stylesheet" href="slick/slick.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<script src="js/jquery-2.1.4.min.js"></script>
-
+    <script src="js/jquery-2.1.4.min.js"></script>
   	<script src="slick/slick.min.js"></script>
-
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script src="js/script.js"></script>
 
@@ -39,10 +35,83 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li class="login"><a href="#"><span>Login</span></a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="about-us-html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li class="login"><button type="button" class="btn " data-toggle="modal" data-target="#myModal">Login</button>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="mod-1">  
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="login.php" method="post">
+                  <div class="input-group input-group-sm">
+                      <span class="input-group-addon" id="sizing-addon1">Username</span>
+                      <input type="text" class="form-control" name="user" aria-describedby="sizing-addon3">
+                  </div> 
+                    <div class="input-group input-group-sm">
+                      <span class="input-group-addon" id="sizing-addon2">Password</span>
+                      <input type="password" class="form-control" name="pass" aria-describedby="sizing-addon3">
+                    </div>
+                    
+                    <div class="submit">
+                    <input type="submit" name="submit" value="submit">
+                    </div>
+
+                  </form>
+                  <a href="#" id="reg">
+                    Register
+                  </a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+              <div class="mod-2">  
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Sign-Up</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="signup.php" method="post">
+                  <div class="input-group input-group-sm">
+                      <span class="input-group-addon" id="sizing-addon1">Username</span>
+                      <input type="text" class="form-control" name="user" aria-describedby="sizing-addon3">
+                  </div> 
+                    <div class="input-group input-group-sm">
+                      <span class="input-group-addon" id="sizing-addon2">Password</span>
+                      <input type="password" class="form-control" name="pass" aria-describedby="sizing-addon3">
+                    </div>
+                    <div class="input-group input-group-sm">
+                      <span class="input-group-addon" id="sizing-addon3">Retype Password</span>
+                      <input type="password" class="form-control" name="repass" aria-describedby="sizing-addon3">
+                    </div>
+                    <div class="submit">
+                    <input type="submit" name="submit" value="submit">
+                    </div>
+
+                  </form>
+                  <a href="#" id="log">
+                    Login
+                  </a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        </li>
 
 
       </ul>
@@ -53,16 +122,14 @@
 <div class="jumbotron">
   <div class="slide">
 <div><img src="images/slide_1.jpg"></div>
-<div><img src="images/slide_1.jpg"></div>
-<div><img src="images/slide_1.jpg"></div>
-<div><img src="images/slide_1.jpg"></div>
+<div><img src="images/slide_2.jpg"></div>
 </div>
 
   <div class="container book">
     <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Outstation</a></li>
-    <li role="presentation"><a href="#">Local</a></li>
-    <li role="presentation"><a href="#">Airport</a></li>
+    <li role="presentation" class="active det"><a href="#">Outstation</a></li>
+    <li role="presentation" class="det"><a href="#">Local</a></li>
+    <li role="presentation" class="det"><a href="#">Airport</a></li>
     </ul>
     <form >
         <div class="col-md-6">
@@ -93,12 +160,17 @@
         <div class="col-md-6">
           <div class="input-group type">
             <span class="input-group-addon" id="basic-addon1">Type</span>
-            <select class="selectpicker">
+            <select class="selectpicker ">
               <option>Economy</option>
               <option>SUV</option>
               <option>Prime</option>
             </select>
 
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="submit-btn">
+           <a href="login-er.html"> <input class="btn" name="submit" value="Submit"></a>
           </div>
         </div>
       </form>
@@ -114,29 +186,31 @@
       <div class="row">
     		<div class="col-md-3">
           <div class="why-box">
-          <div class="why-head"><h3>Reliable</h3></div>
+           <h3>Verified Drivers</h3>
+            <p>Ride safely with verified and professionally trained drivers</p>
           <a href="#">Know More</a>
         </div>  
         </div>
     		<div class="col-md-3">
           <div class="why-box">
-          <div class="why-head"><h3>Reliable</h3></div>
+         <h3>Maintianed Cabs</h3>
+          <p>Our cars are in perfect condition so that your trip goes on in ease.</p>
           <a href="#">Know More</a>
         </div>
         </div>
     		<div class="col-md-3">
           <div class="why-box">
-            <div class="why-head"><h3>Reliable</h3></div>
-            <p> 
-              We are reliable cab service provider.
-            </p>
+            <h3>24x7 Assistance</h3>
+              <p>Got a query? We are always available at +91-9910994229</p>
+              <a href="#">Know More</a>
+                    
+        </div>  
+        </div>
+    		<div class="col-md-3">
+          <div class="why-box">
+          <h3>Pocket Friendly</h3>
+            <p>Most economical prices</p>
             <a href="#">Know More</a>
-        </div>  
-        </div>
-    		<div class="col-md-3">
-          <div class="why-box">
-          <div class="why-head"><h3>Reliable</h3></div>
-          <a href="#">Know More</a>
           </div>
         </div>
       </div>
@@ -153,7 +227,7 @@ Call Us-<span>9790716028</span>
 </div>
 </div>
 
-
+<div id= "contact">
 <div class="contact-us">
   <div class="container">
   <h1>Contact</h1>
@@ -171,7 +245,8 @@ Call Us-<span>9790716028</span>
   </div>
   <div class="input-group">
     <textarea type="text" class="form-control" placeholder="Message" aria-describedby="basic-addon1"></textarea>
-  </div><div class="submit">
+  </div>
+  <div class="submit">
   <button type="button" class="btn btn-default btn-lg">Submit</button>
   </div>
   </div>
@@ -189,7 +264,7 @@ Call Us-<span>9790716028</span>
   </div>
 </div>	
 </div>
-
+</div>
 
 <footer>
   <div class="container">
